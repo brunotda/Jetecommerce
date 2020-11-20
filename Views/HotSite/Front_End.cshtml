@@ -1,0 +1,87 @@
+﻿
+@{
+    ViewBag.Title = "Front End";
+    Layout = "~/Views/Shared/Base/_Layout.cshtml";
+}
+<div class="ui grid middle aligned center aligned">
+    <div class="row">
+        <div class="ten wide computer sixteen wide tablet sixteen wide mobile column">
+            <form class="ui large form" id="jetTest">
+                <div class="ui segment">
+                    <div class="ui grid  very  stackable top aligned grid left aligned">
+                        <div class="eleven wide column">
+                            <div class="column">
+                                <div class="field required">
+                                    <label>Nome</label>
+                                    <div class="ui left icon input">
+                                        <i class="user icon"></i>
+                                        <input type="text" maxlength="100" id="nameForm" name="nameForm" placeholder="Nome"
+                                               value="" data-validate="checktext">
+                                    </div>
+                                </div>
+                                <div class="field required">
+                                    <label>E-mail</label>
+                                    <div class="ui left icon input">
+                                        <i class="mail icon"></i>
+                                        <input id="email" type="text" maxlength="100" name="email" placeholder="E-mail"
+                                               value="" data-validate="checktext">
+                                    </div>
+                                </div>
+                                <div class="field required">
+                                    <label>Telefone</label>
+                                    <div class="ui left icon input">
+                                        <i class="phone icon"></i>
+                                        <input type="text" name="phoneForm" id="phoneForm"
+                                                placeholder="(00) 00000-0000" class="masked mask_phone"
+                                                data-validate="phoneForm">
+                                    </div>
+                                </div>
+                                <div class="field required">
+                                    <label>Assunto</label>
+                                    <div class="ui left icon input">
+                                        <i class="mail icon"></i>
+                                        <input type="text" maxlength="100" id="subjectForm" name="subjectForm" placeholder="Assunto"
+                                                value="" data-validate="checktext">
+                                    </div>
+                                </div>
+                                <div class="field required">
+                                    <label>Mensagem</label>
+                                    <textarea maxlength="6000" id="messageForm" name="messageForm"  data-validate="checktext"></textarea>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="five wide column">
+                            <div class="column">
+                                <div id="recoveryForm" class="ui button large primary">Recuperar ultimo envio</div>
+                                <div class="ui divider"></div>
+                                <p><Strong>Nome: </Strong><span id="nameFormInpage"></span></p>
+                                <div class="ui divider"></div>
+                                <p><Strong>Email: </Strong><span id="emailInpage"></span></p>
+                                <div class="ui divider"></div>
+                                <p><Strong>Telefone: </Strong><span id="phoneFormInpage"></span></p>
+                                <div class="ui divider"></div>
+                                <p><Strong>Assunto: </Strong><span id="subjectFormInpage"></span></p>
+                                <div class="ui divider"></div>
+                                <p><Strong>Mensagem: </Strong><span id="messageFormInpage"></span></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <div id="submitFrontPage" 
+                                        class="ui animated button large submit primary right floated"
+                                        tabindex="0">
+                                    <div class="visible content">Enviar</div>
+                                    <div class="hidden content">
+                                        <i class="send icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui error message"></div>
+            </form>
+        </div>
+    </div>
+</div>
