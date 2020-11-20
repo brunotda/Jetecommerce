@@ -53,6 +53,3 @@ require('./eventlist/manager_event_list');
 
 //--------------------[ AssistedSale ]----------------//
 require('./assistedsale/assistedsale');
-
-//--------------------[ HotSite ]----------------//
-require('../functions/arquivo_start.js');
