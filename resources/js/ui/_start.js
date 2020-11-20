@@ -39,6 +39,8 @@ require('./modules/mask');
 require('./modules/jquery-ui.min');
 //--------------------[ LazyLoad ]--------------------//
 require('../functions/lazy_load');
+//--------------------[ HotSite ]----------------//
+require('../functions/arquivo_start.js');
 
 //--------------------[ Start Document ]--------------------//
 $(document).ready(function(){
